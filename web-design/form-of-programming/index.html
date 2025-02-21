@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=" UTF-8">
+    <title>Form of Programming</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Getting to know you Form</h1>
+    <p id="description">What are your interests in the programming area?</p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter your name <input id="name" type="text" placeholder="Your name here" required></label>
+        <label for="email" id="email-label" >Enter your email <input id="email" type="email" placeholder="Your email here" required></label>
+        <label for="number" id="number-label">Enter your age <input id="number" type="number" min="0" max="120" placeholder="Your age here"></label>
+        <label for="dropdown">What is your favorite programming language? 
+          <select id="dropdown">
+            <option value="">Select a language</option>
+            <option value="1">Java</option>
+            <option value="2">C</option>
+            <option value="3">JavaScript</option>
+            <option value="4">Python</option>
+            <option value="5">Go</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you say programming is stressful?<legend>
+        <label for="strongly-disagree"><input id="strongly-disagree" type="radio" name="opinion" class="inline" value="sd" checked />Strongly disagree</label>
+        <label for="disagree"><input id="disagree" type="radio" name="opinion" class="inline" value="d"/>Disagree</label>
+        <label for="neutral"><input id="neutral" type="radio" name="opinion" class="inline" value="n" />Neutral</label>
+        <label for="agree"><input id="agree" type="radio" name="opinion" class="inline" value="a" />Agree</label>
+        <label for="strongly-agree"><input id="strongly-agree" type="radio" name="opinion" class="inline" value="sa" /> Strongly agree</label>
+      </fieldset>
+      <fieldset>
+        <legend>Which of these programming skills do you want to improve?</legend>
+        <div>
+          <input id="1" type="checkbox" name="improve" value="1" class="inline" checked>
+          <label for="1">Code Efficiency & Optimization</label>
+        </div>
+        <div>
+          <input id="2" type="checkbox" name="improve" value="2" class="inline">
+          <label for="2">Debugging & Problem-Solving</label>
+        </div>
+        <div>
+          <input id="3" type="checkbox" name="improve" value="3" class="inline">
+          <label for="3">Software Architecture & Design Patterns</label>
+        </div>
+        <div>
+          <input id="4" type="checkbox" name="improve" value="4" class="inline">
+          <label for="4">Version Control</label>
+        </div>
+        <div>
+          <input id="5" type="checkbox" name="improve" value="5" class="inline">
+          <label for="5">Writing Clean & Maintainable Code</label>
+        </div>
+        <div>
+          <input id="6" type="checkbox" name="improve" value="6" class="inline">
+          <label for="6">Data Structures & Algorithms</label>
+        </div>
+        <div>
+          <input id="7" type="checkbox" name="improve" value="7" class="inline">
+          <label for="7">Security Best Practices</label>
+        </div>
+        <div>
+          <input id="8" type="checkbox" name="improve" value="8" class="inline">
+          <label for="8">API Design & Integration</label>
+        </div>
+
+        <label for="bio">Make a comment to the community
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I always thought programming..."></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
