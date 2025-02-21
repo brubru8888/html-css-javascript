@@ -55,6 +55,7 @@ Uso de event listeners para capturar ações do usuário
 Copiar
 Editar
 git clone https://github.com/seu-usuario/seu-repositorio.git
+
 2️⃣ Para visualizar os projetos do Responsive Web Design, basta abrir os arquivos .html no seu navegador.
 
 3️⃣ Para rodar o RPG Dragon Repeller, abra o arquivo HTML correspondente no navegador ou utilize um ambiente como o Replit para testar o código JavaScript.
